@@ -3,6 +3,7 @@ body{
     flex-direction: column;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
 }
 .container{
     display: flex;
@@ -10,23 +11,31 @@ body{
 }
 
 /*Nav bar*/
-.navbar{
+.navbar {
     display: flex;
-    align-items: center;
+    color: #F9FAF8;
+    background-color: #1F2937;
     padding: 20px 0px 20px 100px;
-    background-color: #1f2937;
+    align-items: center;
 }
-.nav-links{
+
+.nav-links {
     display: flex;
-    list-style:none ;
-    color: #e5e7eb;
-    font-size: 18px;
-    padding: 0px 100px 0px 0px;
     margin-left: auto;
+    padding: 0px 100px 0px 0px;  
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #E5E7EB;
+    font-size: 18px;
+    padding: 10px;
+    font-family: 'Roboto', arial;
 }
 .logo{
     font-size: 24px;
     color: #f9faf8;
+    margin-right: auto;
 }
 .hero{
     display: flex;
@@ -86,9 +95,64 @@ h1{
     text-align: right;
 }
 
-.square{
+.content {
+    align-items: center;
+}
+
+.content-info {
     display: flex;
-    justify-content: space-around;
+    /* border: 1px solid gold; */
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.content-info img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin: 5px 20px 0px 20px;
+}
+
+.sign-up {
+    background-color: #3882F6 ;
+    margin: 50px 200px;
+    padding: 10px 80px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    border-color: none;
+}
+
+.sign-item {
+    flex: 1;
+}
+
+.signs-text {
+    text-align: left;
+}
+
+.signs-text p {
+    color: #fff;
+    opacity: 0.7;
+    margin: 5px 30px 30px 50px;
+}
+
+h3 {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 30px 0px 0px 50px;
+}
+
+.signs-button button {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    border-color: #fff;
+    border-radius: 8px;
+    background-color: #3882F6;
+    padding: 5px 25px;
+    font-size: 15px;
 }
 
 .foot{
